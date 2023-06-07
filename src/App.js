@@ -1,22 +1,18 @@
 import './assets/styles/style.css';
 
+import { Header } from './assets/components/header';
+import { Card } from './assets/components/card';
+// import { BrowserRouter as Router } from "react-router-dom";
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header></Header>
+      <div className="container">
+        {/* <Router> */}
+        <Card></Card>
+        {/* </Router> */}
+      </div>
     </div>
   );
 }

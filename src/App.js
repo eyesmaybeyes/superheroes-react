@@ -11,10 +11,10 @@ function App() {
       <Header></Header>
       <div className="container">
         <Routes>
-          <Route path="/" element={<Card />} />
-          <Route path="/hero" element={<Hero />}>
-            <Route index element={<Card />} />
-            <Route path=":id" element={<Hero />} />
+          <Route path="/" component={Card} />
+          <Route path="/hero" component={Hero}>
+            <Route index component={Card} />
+            <Route path=":id" component={Hero} />
           </Route >
         </Routes>
       </div>

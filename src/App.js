@@ -1,19 +1,24 @@
 import './assets/styles/style.css';
+import { Route, Routes } from "react-router-dom";
 
 import { Header } from './assets/components/header';
 import { Card } from './assets/components/card';
-// import { BrowserRouter as Router } from "react-router-dom";
+import { Hero } from './assets/components/hero';
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
       <div className="container">
-        {/* <Router> */}
-        <Card></Card>
-        {/* </Router> */}
+        <Routes>
+          <Route path="/" element={<Card />} />
+          <Route path="/hero" element={<Hero />}>
+            <Route index element={<Card />} />
+            <Route path=":id" element={<Hero />} />
+          </Route >
+        </Routes>
       </div>
-    </div>
+    </div >
   );
 }
 

@@ -1,9 +1,9 @@
-import './assets/styles/style.css';
+import './styles/style.css';
 import { Route, Routes } from "react-router-dom";
 
-import { Header } from './assets/components/header';
-import { Card } from './assets/components/card';
-import { Hero } from './assets/components/hero';
+import { Header } from './components/header';
+import { Card } from './components/card';
+import { Hero } from './components/hero';
 
 function App() {
   return (

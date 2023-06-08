@@ -1,3 +1,4 @@
+import "../styles/style.css";
 import data from "../data/heroes.json";
 import { useParams } from "react-router-dom";
 
@@ -14,14 +15,27 @@ function Hero({ match }) {
 
     return (
         <div>
-            <h1>{hero.name}</h1>
-            <p>Вселенная: {hero.universe}</p>
-            <p>Альтер Эго: {hero.alterego}</p>
-            <p>Род деятельности: {hero.occupation}</p>
-            <p>Друзья: {hero.friends}</p>
-            <p>Суперсилы: {hero.superpowers}</p>
-            <img src={hero.url} alt="hero" />
-            <p>{hero.info}</p>
+            <h1 className="card__title">{hero.name}</h1>
+            <p className="card__desc">
+                <span className="hero-title">Вселенная:</span> {hero.universe}
+            </p>
+            <p className="card__desc">
+                <span className="hero-title">Альтер эго:</span> {hero.alterego}
+            </p>
+            <p className="card__desc">
+                <span className="hero-title">Род деятельности: </span>
+                {hero.occupation}
+            </p>
+            <p className="card__desc">
+                <span className="hero-title">Друзья: </span>
+                {hero.friends}
+            </p>
+            <p className="card__desc">
+                <span className="hero-title">Суперсилы: </span>
+                {hero.superpowers}
+            </p>
+            <img className="hero-image" src={hero.url} alt="hero" />
+            <p className="card__desc">{hero.info}</p>
         </div>
     );
 }

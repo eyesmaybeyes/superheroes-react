@@ -2,7 +2,7 @@ import "../styles/style.css";
 import data from "../data/heroes.json";
 import { useParams } from "react-router-dom";
 
-function Hero({ match }) {
+function Hero() {
     const params = useParams();
 
     const heroId = params.id;

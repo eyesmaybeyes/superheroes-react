@@ -20,8 +20,11 @@ a {
 }
 .header-title {
     margin: 0;
+    color: #fff;
 }
-
+.header-title:active {
+    color: #fff;
+}
 .header__link_marvel {
     color: #fff;
     text-shadow: 0px 0px 5px #d50c0c, 0px 0px 10px #d50c0c, 0px 0px 10px #d50c0c,

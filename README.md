@@ -4,7 +4,7 @@ _Marvel and DC Characters Database_
 
 ## Result
 
-<img width="700" alt="Screen" src="./superheroes.png">
+<img width="700" alt="Screen" src="image.png">
 <img width="700" alt="Screen" src="./hero.png">
 
 ## Demo

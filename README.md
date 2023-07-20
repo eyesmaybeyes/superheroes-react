@@ -2,7 +2,7 @@
 _Marvel and DC Characters Database_ 
 
 ## Result
-<img src="Superheroes.gif" alt="superheroes" style="zoom: 33%;" />
+<img src="Superheroes.gif" alt="superheroes"/>
 
 ## Demo
 [superheroes-react]
